@@ -38,7 +38,7 @@ fi
 # Install plugins if they don't exist
 declare -A plugins=(
   ["zsh-autosuggestions"]="https://github.com/zsh-users/zsh-autosuggestions"
-  ["fast-syntax-highlighting"]="https://github.com/zdharma/fast-syntax-highlighting"
+  ["fast-syntax-highlighting"]="https://github.com/zdharma-continuum/fast-syntax-highlighting"
   ["zsh-completions"]="https://github.com/zsh-users/zsh-completions"
 )
 
