@@ -26,14 +26,6 @@ for pkg in zsh git curl; do
   fi
 done
 
-# Backup existing .zshrc if it exists
-if [ -f ~/.zshrc ]; then
-  echo "Backing up existing .zshrc..."
-  mv ~/.zshrc ~/.zshrc.backup.$(date +%Y%m%d_%H%M%S)
-fi
-
-# Copy new zshrc
-cp ./zshrc ~/.zshrc
 
 # Install Oh-My-Zsh if not already installed
 if [ ! -d ~/.oh-my-zsh ]; then
@@ -58,6 +50,15 @@ for plugin in "${!plugins[@]}"; do
     echo "$plugin is already installed"
   fi
 done
+
+# Backup existing .zshrc if it exists
+if [ -f ~/.zshrc ]; then
+  echo "Backing up existing .zshrc..."
+  mv ~/.zshrc ~/.zshrc.backup.$(date +%Y%m%d_%H%M%S)
+fi
+
+# Copy new zshrc
+cp ./.zshrc ~/.zshrc
 
 echo "Setup completed successfully!"
 
