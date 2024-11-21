@@ -73,10 +73,13 @@ ZSH_THEME="eastwood"
 plugins=(
   git
   z
-  zsh-autocomplete
   zsh-autosuggestions
   fast-syntax-highlighting
+  zsh-autocomplete
 )
+
+zstyle ':autocomplete:*' min-input 3
+zstyle ':autocomplete:*' delay 0.5  # seconds (float)
 
 source $ZSH/oh-my-zsh.sh
 
