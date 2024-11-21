@@ -73,13 +73,10 @@ ZSH_THEME="eastwood"
 plugins=(
   git
   z
-  zsh-completions
+  zsh-autocomplete
   zsh-autosuggestions
   fast-syntax-highlighting
 )
-
-# Add zsh-completions to fpath before sourcing oh-my-zsh
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 

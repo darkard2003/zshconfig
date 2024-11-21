@@ -39,7 +39,7 @@ fi
 declare -A plugins=(
   ["zsh-autosuggestions"]="https://github.com/zsh-users/zsh-autosuggestions"
   ["fast-syntax-highlighting"]="https://github.com/zdharma-continuum/fast-syntax-highlighting"
-  ["zsh-completions"]="https://github.com/zsh-users/zsh-completions"
+  ["zsh-autocomplete"]="https://github.com/marlonrichert/zsh-autocomplete.git"
 )
 
 for plugin in "${!plugins[@]}"; do
